@@ -1,6 +1,6 @@
 # create a docker container
 ```bash
-docker run --gpus all -it \
+docker run --ipc=host --gpus all -it \
     --privileged \
     -v /dev/video0:/dev/video0 \
     -v /dev/snd:/dev/snd \
@@ -10,6 +10,6 @@ docker run --gpus all -it \
     --env=unix$DISPLAY \
     -e="QT_X11_NO_MITSHM=1" \
     -v="/tmp/.X11-unix:/tmp/.X11-unix" \
-    --name=Giwon_d3 \
+    --name=Giwon_y5_1 \
     ultralytics/yolov5:latest
 ```
