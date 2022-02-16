@@ -27,8 +27,23 @@ touch .gitignore
 # make branch
 git branch test_branch
 
+# check all branches
+git branch
+
 # checkout current branch to new branch
 git checkout test_branch
+
+# check all branch status and log
+git log
+
+# merge a branch to master branch
+1.user need to be in the master branch
+git checkout master
+2.merge branches
+git merge test_branch
+
+# remove merged/unused branch
+git branch -d test_branch
 ----------------------------------------------------
 
 # git with remote repository - github
@@ -40,6 +55,11 @@ git remote add origin https://github.com/giwone1330/test_demo.git
 git remote
 ## now it should display >>origin
 
+git remote rename name newname
+
+# show more information
+git remote show origin 
+
 # push commited files to github - first push
 git push -u origin master
 # push commited files to github - second~ push
@@ -49,3 +69,6 @@ git push
 git clone <url>
 # update local repository with remote repository
 git pull
+
+# Edit commit log / remove commit (9 commits from HEAD)
+git rebase -i HEAD~9
