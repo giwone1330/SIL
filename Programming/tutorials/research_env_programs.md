@@ -27,8 +27,6 @@ Size | cluster size
       1. Docker family
       2. Remote family (SSH)
    2. Check ssh connection
-      1. silws@165.132.128.243:22
-      2. user@165.132.128.241:22
    3. Open a new/running container
       1. For docker command, check [docker_commands.md]
       2. Right click => Attach VS Code, on the running container
