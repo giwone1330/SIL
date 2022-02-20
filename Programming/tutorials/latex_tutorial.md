@@ -17,3 +17,4 @@ VS Code extension : LaTeX workshop
   - ctrl + click
 - Snippets
   - [cheatsheet](https://cheatography.com/jcwinkler/cheat-sheets/latex-workshop-visual-studio-code/)
+  - study how to make user snippets later...
