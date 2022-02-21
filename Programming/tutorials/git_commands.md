@@ -72,3 +72,14 @@ git pull
 
 # Edit commit log / remove commit (9 commits from HEAD)
 git rebase -i HEAD~9
+
+# git push errors related to large files
+git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+git reset HEAD~<HOWEVER MANY COMMITS YOU WERE BEHIND>
+ex) git reset HEAD~2
