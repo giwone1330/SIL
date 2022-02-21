@@ -17,8 +17,8 @@ docker run --gpus all -it \
     --env=unix$DISPLAY \
     -e="QT_X11_NO_MITSHM=1" \
     -v="/tmp/.X11-unix:/tmp/.X11-unix" \
-    --name=S1 \
-    detectron2:g2
+    --name=Giwon_yx1 \
+    yolox:g1
 ```
 
 # First thing to do after opening a Container
@@ -28,3 +28,9 @@ docker run --gpus all -it \
 
 # rename containers
 docker rename [old] [new]
+
+
+# container to image
+```sql
+docker commit container_name image_name:version
+```
